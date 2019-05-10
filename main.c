@@ -22,8 +22,8 @@ int main(int argc, char **argv) {
   double sreflect[3];
 
   // ambient light
-  ambient.red = 25;
-  ambient.green = 25;
+  ambient.red = 50;
+  ambient.green = 50;
   ambient.blue = 50;
 
   // one point light source

@@ -93,6 +93,9 @@ color calculate_specular(double light[2][3], double *sreflect, double *view, dou
 
 //limit each component of c to a max of 255
 void limit_color( color * c ) {
+  c->red = c->red > 255 ? 255 : c->red;
+  c->blue = c->blue > 255 ? 255 : c->blue;
+  c->green = c->green > 255 ? 255 : c->green;
 }
 
 //vector functions
